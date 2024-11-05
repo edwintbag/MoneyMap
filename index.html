@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+    <header>
+        <h1>Personal Finance Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#budget">Budget Planner</a></li>
+                <li><a href="#savings">Savings Goals</a></li>
+                <li><a href="#tips">Financial Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="charts">
+                <canvas id="dashboardChart"></canvas>
+            </div>
+        </section>
+
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <form id="transaction-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="salary">Salary</option>
+                    <option value="rent">Rent</option>
+                    <option value="investment">Investment</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="groceries">Groceries</option>
+                </select>
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+                
+                <button type="submit">Add Transaction</button>
+            </form>
+            <ul id="transaction-list"></ul>
+            <canvas id="transactionChart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="budget">
+            <h2>Budget Planner</h2>
+            <form id="budget-form">
+                <label for="budget-category">Category:</label>
+                <select id="budget-category" name="category" required>
+                    <option value="rent">Rent</option>
+                    <option value="groceries">Groceries</option>
+                    <!-- More categories -->
+                </select>
+                
+                <label for="budget-amount">Budget Amount:</label>
+                <input type="number" id="budget-amount" name="amount" required>
+                
+                <button type="submit">Set Budget</button>
+            </form>
+            <ul id="budget-list"></ul>
+            <canvas id="budgetChart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="savings">
+            <h2>Savings Goals</h2>
+            <form id="savings-form">
+                <label for="goal-name">Goal Name:</label>
+                <input type="text" id="goal-name" name="goal-name" required>
+                
+                <label for="goal-amount">Target Amount:</label>
+                <input type="number" id="goal-amount" name="goal-amount" required>
+                
+                <label for="goal-date">Target Date:</label>
+                <input type="date" id="goal-date" name="goal-date" required>
+                
+                <button type="submit">Set Goal</button>
+            </form>
+            <ul id="goal-list"></ul>
+            <canvas id="savingsChart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="tips">
+            <h2>Financial Tips</h2>
+            <p id="loading-message">Loading financial tips...</p>
+            <div id="financial-tips" class="card-container"></div>
+            <p id="no-tips-message" style="display: none ;">No financial tips available at the moment. Please check back later.</p>
+            <canvas id="tipsChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Personal Finance Dashboard</p>
+    </footer>
+    <script src="script.js" ></script>
+</body>
+</html>
