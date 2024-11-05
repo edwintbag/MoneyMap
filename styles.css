@@ -159,4 +159,87 @@ footer {
    .footer p{
       padding-bottom: 15px;
    }
+
+
+   /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+   body {
+       font-size: 0.9em;
+   }
+
+   .container {
+       padding: 10px;
+   }
+
+   header {
+       font-size: 1.2em;
+       padding: 5px 0;
+   }
+
+   nav ul {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   nav ul li {
+       display: block;
+       margin: 5px 0;
+   }
+
+   main {
+       padding: 10px;
+   }
+
+   section {
+       padding: 15px;
+       margin-bottom: 15px;
+   }
+
+   h2 {
+       font-size: 1.2em;
+       text-align: center;
+   }
+
+   form input,
+   form select,
+   form button {
+       padding: 6px;
+       font-size: 0.9em;
+   }
+
+   .footer {
+       padding: 10px 0;
+   }
+
+   .footer a {
+       font-size: 1.5rem;
+   }
+
+   .about-desc {
+       line-height: 20px;
+       padding: 10px;
+       text-align: center;
+   }
+
+   .card {
+       padding: 10px;
+   }
+
+   .card h3 {
+       font-size: 1em;
+   }
+
+   .card p {
+       font-size: 0.9em;
+   }
+
+   #dashboardChart,
+   #transactionChart,
+   #budgetChart,
+   #savingsChart,
+   #tipsChart {
+       width: 100%;
+       height: auto;
+   }
+}
    
