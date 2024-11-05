@@ -121,30 +121,42 @@ footer {
    font-weight: bold;
 }
 
-.card a:hover {
-   text-decoration: underline;
-}
-
-.loading-message {
-   font-size: 1.1em;
-   text-align: center;
-   color: #888;
-}
-
-
-.rating-section {
-   margin-top: 10px;
-}
-
-.rating-button {
-   margin: 0 5px;
-   padding: 5px 10px;
-   border: none;
-   border-radius: 5px;
-   background-color: #f0f0f0;
-   cursor: pointer;
-}
-
-.rating-button:hover {
-   background-color: #ddd;
-}
+#about{
+   max-width: 800px;
+   margin: 0;
+   }
+   #about h1{
+      text-align: center;
+   }
+   .about-desc{
+      align-items: center;
+      margin: 10px;
+      line-height: 25px;
+   }
+   
+   .footer{
+      margin-top: 40px;
+      margin: 50px , 0 10px;
+      text-align: center;
+      
+   }
+   .footer a{
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 22px;
+      margin: 0 10px;
+      font-size: 2rem;
+      
+   }
+   .footer h1{
+      background: #999;
+      height: 1px;
+      width: 100%;
+      border: 0;
+      margin: 20px 0;
+   
+   }
+   .footer p{
+      padding-bottom: 15px;
+   }
+   
